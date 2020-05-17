@@ -1,0 +1,16 @@
+<div class="row" class="wrapper fadeInDown" >
+
+  <div class="col-md-10 col-md-offset-2" id="formContent">
+    <div *ngIf="showErrorMessage" class="form-group fadeIn second">
+      Invalid username and password Please try again
+    </div>
+      <div class="form-group">
+        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" [(ngModel)]="email">
+      </div>
+      <div class="form-group">
+        <input type="text" id="password" class="fadeIn third" [(ngModel)]="password" name="password" placeholder="password">
+
+      </div>
+      <button type="submit" id="loginSubmit" class="fadeIn fourth" (click)="onSubmit()">Login</button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="col-md-8">
+  <h4> User :  {{ userEmail }}  Order  Details</h4>
+
+<button class="btn btn-danger" id="placeOrder" (click)="placeOrder()" style="align:right"> Place Order</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of orders">
+      <td>{{product.id}}</td>
+      <td>{{product.id}}</td>
+      <td>{{product.totalOrderPrice}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
